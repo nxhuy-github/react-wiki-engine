@@ -75,7 +75,11 @@ class App extends React.Component {
       <div className="App">
         <h1>Wikipedia Search Engine</h1>
         <form action="" >
-          <input type="text" value={this.state.wikiSearchTerms} onChange={this.changeWikiSearchTerms} placeholder="Search Wikipedia Articles" />
+          <input
+            type="text" 
+            value={this.state.wikiSearchTerms} 
+            onChange={this.changeWikiSearchTerms} 
+            placeholder="Search Wikipedia Articles" />
           <button type="submit" onClick={this.useWikiSearchEngine} >Search</button>
         </form>
         {wikiSearchResults}
